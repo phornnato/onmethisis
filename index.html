@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Play Sound</title>
+</head>
+<body>
+    <!-- Audio element with autoplay and muted attributes -->
+    <audio controls autoplay loop muted id="myAudio">
+        <source src="bruh.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // JavaScript to unmute the audio if needed
+        document.getElementById('myAudio').muted = false;
+    </script>
+</body>
+</html>
